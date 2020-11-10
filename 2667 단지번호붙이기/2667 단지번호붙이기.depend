@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1605015164 source:c:\users\mancheol\documents\projects\algorithm\baekjoon_algorithm\2667 단지번호붙이기\main.cpp
+1605018751 source:c:\users\mancheol\documents\projects\algorithm\baekjoon_algorithm\2667 단지번호붙이기\main.cpp
 	<iostream>
 	<stdio.h>
 	<vector>
+	<algorithm>
 	<deque>
 
