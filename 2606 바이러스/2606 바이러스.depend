@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1605077700 source:c:\users\mancheol\documents\projects\algorithm\baekjoon_algorithm\2606 바이러스\main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<algorithm>
+	<deque>
+
