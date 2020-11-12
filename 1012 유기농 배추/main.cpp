@@ -6,6 +6,7 @@ using namespace std;
 int v[51][51];
 int visited[51][51];
 int dy[4] = {-1,1,0,0};
+
 int dx[4] = {0,0,-1,1};
 int T,M,N,K,X,Y,cnt=0;
 deque < pair < int,int > > vq;
