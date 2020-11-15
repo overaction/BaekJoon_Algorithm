@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605424288 source:c:\users\mancheol\documents\projects\algorithm\baekjoon_algorithm\11724 연결 요소의 개수\main.cpp
+	<iostream>
+	<deque>
+	<stdio.h>
+
