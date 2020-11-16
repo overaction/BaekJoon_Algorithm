@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1605493980 source:c:\users\mancheol\documents\projects\algorithm\baekjoon_algorithm\14502 ¿¬±¸¼Ò\main.cpp
+	<iostream>
+	<deque>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+
