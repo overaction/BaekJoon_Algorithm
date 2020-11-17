@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1605622343 source:c:\users\mancheol\documents\projects\algorithm\baekjoon_algorithm\7562 나이트의 이동\main.cpp
+	<iostream>
+	<iostream>
+	<stdio.h>
+	<deque>
+	<string.h>
+	<algorithm>
+
