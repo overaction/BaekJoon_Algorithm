@@ -5,14 +5,14 @@
 #include <string.h>
 #include <algorithm>
 using namespace std;
-int T,I,startx,starty,endx,endy,minimum = 999;
+int T,I,startx,starty,endx,endy,minimum = 999999999;
 int chess[301][301];
 int visited[301][301];
 int dy[8] = {-2,-1,-2,-1,2,1,2,1};
 int dx[8] = {-1,-2,1,2,-1,-2,1,2};
 
 void knight(int Y, int X) {
-    if(ny == endy && nx == endx) {
+    if(Y == endy && X == endx) {
         minimum = 0;
         return;
     }
@@ -50,7 +50,7 @@ int main() {
         knight(starty,startx);
 
         printf("%d\n",minimum);
-        minimum = 9999; // 초기화
+        minimum = 9999999999; // 초기화
         memset(chess,0,sizeof(chess));
     }
 }
