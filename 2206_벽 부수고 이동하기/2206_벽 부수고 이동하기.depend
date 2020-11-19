@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1605774346 source:d:\project\algorithms\baekjoon_algorithm\2206_벽 부수고 이동하기\main.cpp
+	<iostream>
+	<iostream>
+	<stdio.h>
+	<deque>
+	<string.h>
+	<algorithm>
+
