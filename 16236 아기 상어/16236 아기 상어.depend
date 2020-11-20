@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605891340 source:d:\project\algorithms\baekjoon_algorithm\16236 아기 상어\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+
