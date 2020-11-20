@@ -5,11 +5,11 @@
 #include <string.h>
 #include <algorithm>
 using namespace std;
-int N,M,case1=0,case2=0;
+int N,M;
 int Map[1001][1001];
 int dy[4] = {-1,1,0,0};
 int dx[4] = {0,0,-1,1};
-int visited[1001][1001][2];
+int visited[1001][1001][2]; //3번째 배열에는 벽을 부순 전적이 있는지 여부를 담는다
 
 int bfs() {
     deque < pair < pair < int,int >, int > > dq;
@@ -30,12 +30,11 @@ int bfs() {
             if(Map[ny][nx] == 1 && wall) {
                 visited[ny][nx][0] = visited[y][x][1] + 1;
                 dq.push_back(make_pair(make_pair(ny,nx),0));
-                case1+=1;
             }
+            // 벽이 아니고 방문한 적이 없다면
             else if(Map[ny][nx] == 0 && visited[ny][nx][wall] == 0) {
                 visited[ny][nx][wall] = visited[y][x][wall] + 1;
                 dq.push_back(make_pair(make_pair(ny,nx),wall));
-                case2+=1;
             }
         }
     }
@@ -50,5 +49,4 @@ int main() {
         }
     }
     printf("%d\n",bfs());
-    printf("%d\n%d\n",case1,case2);
 }
