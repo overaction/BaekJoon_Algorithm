@@ -62,6 +62,7 @@ int bfs() {
                     by -= dy[i];
                     bx -= dx[i];
                 }
+                // 빨간공이 뒤에 있었음
                 else if(bluecnt < redcnt) {
                     ry -= dy[i];
                     rx -= dx[i];
@@ -71,6 +72,7 @@ int bfs() {
             if(by == ey && bx == ex) {
                 continue;
             }
+            // 방문 안한곳이면 deque에 넣고 재탐색
             if(visited[ry][rx][by][bx] == 0) {
                 visited[ry][rx][by][bx] = 1;
                 options next = {now.depth+1,ry,rx,by,bx};
@@ -78,6 +80,7 @@ int bfs() {
             }
         }
     }
+    // 두 공이 동시에 골인하는 경우밖에 없음
     return -1;
 }
 
