@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1606066326 source:d:\project\algorithms\baekjoon_algorithm\16234 인구 이동\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<deque>
+	<string.h>
+	<math.h>
+

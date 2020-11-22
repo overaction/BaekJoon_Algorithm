@@ -47,13 +47,14 @@ int bfs() {
             int y = dq.front().first;
             int x = dq.front().second;
             dq.pop_front();
-            if(forest[y][x] == 3) {
-                return visited[y][x];
-            }
             for(int i=0; i<4; i++) {
                 int ny = y + dy[i];
                 int nx = x + dx[i];
                 // 범위를 벗어남
+                if(ny == ey && nx == ex) {
+                    visited[ny][nx] = visited[y][x] + 1;
+                    return visited[ny][nx];
+                }
                 if(ny > R || ny <= 0 || nx > C || nx <= 0) continue;
                 // 방문한곳이거나 물 or 돌이 있는곳
                 if(visited[ny][nx] || forest[ny][nx] == 1 || forest[ny][nx] == 2) continue;
