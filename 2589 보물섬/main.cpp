@@ -58,5 +58,5 @@ int main()
         treasure(y,x);
         memset(visited,0,sizeof(visited));
     }
-    printf("%d",maximum);
+    printf("%d",maximum-1);
 }

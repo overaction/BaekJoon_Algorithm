@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1606404978 source:d:\project\algorithms\baekjoon_algorithm\5014 스타트링크\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+
