@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1608126828 source:d:\project\algorithms\baekjoon_algorithm\11559_puyo puyo\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<deque>
+
