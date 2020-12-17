@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1608179541 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\10773_제로\main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+
