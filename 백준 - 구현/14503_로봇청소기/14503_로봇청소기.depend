@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1608201727 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\14503_로봇청소기\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+
