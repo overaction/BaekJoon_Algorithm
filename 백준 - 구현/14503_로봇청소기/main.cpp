@@ -22,7 +22,6 @@ void bfs() {
         for(int i=0; i<4; i++) {
             d = d+1;
             if(d >= 4) d = 0;
-            printf("d %d\n",d);
             int ny = y + dy[d];
             int nx = x + dx[d];
 

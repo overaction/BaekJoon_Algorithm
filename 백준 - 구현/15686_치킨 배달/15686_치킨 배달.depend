@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1608216670 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\15686_치킨 배달\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+	<vector>
+	<stdlib.h>
+	<algorithm>
+
