@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1608269745 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\14891_톱니바퀴\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<deque>
+
