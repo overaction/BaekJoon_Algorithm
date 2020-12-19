@@ -17,9 +17,7 @@ vector<vector<int>> map(8,vector<int>(8,0)); //사무실
 vector<str> vec;
 
 void move(int dir,int y,int x){
-
     switch(dir){
-
         //북
         case 0:
             for(int i=y-1;i>=0;i--){
@@ -27,7 +25,6 @@ void move(int dir,int y,int x){
                 if(map[i][x]==0) map[i][x]=-1; //cctv 감시 완료
             }
             break;
-
         //동
         case 1:
             for(int j=x+1;j<M;j++){
@@ -35,7 +32,6 @@ void move(int dir,int y,int x){
                 if(map[y][j]==0) map[y][j]=-1;
             }
             break;
-
         //남
         case 2:
             if(dir==2){
@@ -45,22 +41,17 @@ void move(int dir,int y,int x){
                 }
             }
             break;
-
         //서
         case 3:
             for(int j=x-1;j>=0;j--){
                 if(map[y][j]==6) break;
                 if(map[y][j]==0) map[y][j]=-1;
             }
-
     }
-
 }
 
 void dfs(int step){
-
     if(step==cctv_cnt){
-
         int cnt=0;
         for(int i=0;i<N;i++){
             for(int j=0;j<M;j++){
@@ -68,11 +59,9 @@ void dfs(int step){
                     cnt++;
             }
         }
-
         ans=min(ans,cnt);
         return;
     }
-
     int cctv=vec[step].cctv;
     int y=vec[step].y;
     int x=vec[step].x;
@@ -81,13 +70,11 @@ void dfs(int step){
     vector<vector<int>> map2=map;
 
     switch(cctv){
-
         case 1:
             //북,동,남,서
             for(int dir=0;dir<4;dir++){
                 move(dir,y,x);
                 dfs(step+1);
-
                 map=map2;
             }
             break;
@@ -98,7 +85,6 @@ void dfs(int step){
                 move(dir,y,x);
                 move(dir+2,y,x);
                 dfs(step+1);
-
                 map=map2;
             }
             break;
@@ -109,7 +95,6 @@ void dfs(int step){
                 move(dir,y,x);
                 move((dir+1)%4,y,x);
                 dfs(step+1);
-
                 map=map2;
             }
             break;
@@ -121,25 +106,19 @@ void dfs(int step){
                 move((dir+1)%4,y,x);
                 move((dir+2)%4,y,x);
                 dfs(step+1);
-
                 map=map2;
             }
             break;
-
         case 5:
             for(int dir=0;dir<4;dir++)
                 move(dir,y,x);
-
             dfs(step+1);
     }
-
 }
 
 
 int main(){
-
     cin>>N>>M;
-
     for(int i=0;i<N;i++){
         for(int j=0;j<M;j++){
             scanf("%d",&map[i][j]);
@@ -149,9 +128,7 @@ int main(){
             }
         }
     }
-
     dfs(0);
     cout<<ans<<endl;
-
     return 0;
 }

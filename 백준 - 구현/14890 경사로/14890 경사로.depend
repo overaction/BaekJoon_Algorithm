@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1608390933 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\14890 경사로\main.cpp
+	<iostream>
+	<vector>
+	<deque>
+	<algorithm>
+
