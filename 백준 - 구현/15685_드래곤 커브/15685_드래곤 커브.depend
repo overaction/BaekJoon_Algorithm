@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1608650723 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\15685_드래곤 커브\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+
