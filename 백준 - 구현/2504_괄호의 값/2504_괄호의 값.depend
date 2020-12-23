@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1608731603 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\2504_괄호의 값\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+	<stack>
+	<string>
+
