@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1608816165 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\17144_미세먼지 안녕!\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+	<string>
+

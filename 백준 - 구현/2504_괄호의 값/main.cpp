@@ -57,6 +57,7 @@ void solution() {
             }
         }
     }
+    if(!s.empty()) possible = false;
 }
 
 int main()
