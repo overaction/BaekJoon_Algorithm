@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 int N,M,H,result = 98765432;
-int A[1001][11];
+int A[31][11];
 
 void print() {
     for(int i=1; i<=N; i++) {

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1608910783 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\11286_절댓값 힙\main.cpp
+	<stdio.h>
+	<algorithm>
+	<queue>
+
