@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1608864532 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\5430_ac\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+	<string>
+	<vector>
+

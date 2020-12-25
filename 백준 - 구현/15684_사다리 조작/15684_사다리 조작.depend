@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1608878076 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\15684_사다리 조작\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+	<string>
+	<vector>
+
