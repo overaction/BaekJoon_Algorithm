@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1608959589 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\16235_나무 재테크\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+	<algorithm>
+	<queue>
+	<vector>
+
