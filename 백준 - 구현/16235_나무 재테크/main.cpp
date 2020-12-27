@@ -40,9 +40,10 @@ void future() {
             treeToEnergy = 0;
         }
     }
-    // 가을
+    // 겨울, 가을
     for(int i=1; i<=N; i++) {
         for(int j=1; j<=N; j++) {
+            E[i][j] += A[i][j];
             vsize = v[i][j].size();
             if(vsize == 0) continue;
             for(int k=0; k<vsize; k++) {
@@ -54,12 +55,6 @@ void future() {
                     v[ny][nx].push_back(1);
                 }
             }
-        }
-    }
-    // 겨울
-    for(int i=1; i<=N; i++) {
-        for(int j=1; j<=N; j++) {
-            E[i][j] += A[i][j];
         }
     }
 }
