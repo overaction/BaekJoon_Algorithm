@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1609599014 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\17822_원판 돌리기\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+	<cstring>
+	<algorithm>
+	<vector>
+
