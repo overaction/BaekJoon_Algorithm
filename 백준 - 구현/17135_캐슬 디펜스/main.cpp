@@ -4,83 +4,81 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
-typedef struct option {
+struct option {
     int y,x;
     bool alive;
-}option;
+};
 int N,M,D;
+int board[16][16];
+bool selection[16];
 int result = 0;
-int castle[16][16];
-bool selects[16];
 vector < option > enemy;
-
-void archer(int index, int cnt) {
+void defense(int index, int cnt) {
     if(cnt == 3) {
         int res = 0;
-        vector < option > temp;
-        temp = enemy;
-        // 궁수 배치
+        // 궁수 저장
         vector < int > arc;
-        for(int i=1; i<=M; i++) if(selects[i]) arc.push_back(i);
+        for(int i=1; i<=M; i++) if(selection[i]) arc.push_back(i);
+        // 원본대신 복사본으로
+        vector < option > copy_enemy = enemy;
         while(1) {
-            if(temp.size() == 0) break;
-            // 각각 궁수에 대해
+            if(enemy.size() == 0) break;
             for(int i=0; i<arc.size(); i++) {
+                int ay = N+1;
+                int ax = arc[i];
+                int targetx = M+1;
                 int idx = -1;
-                int nowy = N+1;
-                int nowx = arc[i];
-                int targetx = M;
-                int dist = 987654321;
-                for(int j=0; j<temp.size(); j++) {
-                    int tempDist = abs(nowy - temp[j].y) + abs(nowx - temp[j].x);
+                int dist = 98765432;
+                for(int j=0; j<copy_enemy.size(); j++) {
+                    int tempDist = abs(ay - copy_enemy[j].y) + abs(ax - copy_enemy[j].x);
                     if(tempDist > D) continue;
-                    if(dist > tempDist) {
-                        targetx = temp[j].x;
+                    if(tempDist < dist) {
                         dist = tempDist;
+                        targetx = copy_enemy[j].x;
                         idx = j;
                     }
-                    else if(dist == tempDist && targetx > temp[j].x) {
-                        targetx = temp[j].x;
+                    else if(tempDist == dist && targetx > copy_enemy[j].x) {
+                        targetx = copy_enemy[j].x;
                         idx = j;
                     }
                 }
-                if(idx != -1 && temp[idx].alive == true) {
-                    temp[idx].alive = false;
+                if(idx != -1 && copy_enemy[idx].alive == true) {
+                    copy_enemy[idx].alive = false;
                     res++;
                 }
             }
-            vector < option > alives;
-            for(int i=0; i<temp.size(); i++) {
-                if(temp[i].alive) {
-                    if(temp[i].y + 1 <= N) {
-                        alives.push_back({temp[i].y+1,temp[i].x,temp[i].alive});
-                    }
+            vector < option > temp;
+            // 공격받은 적 제거, 한칸 위로 이동
+            for(int i=0; i<copy_enemy.size(); i++) {
+                if(copy_enemy[i].alive == true && copy_enemy[i].y+1 <= N) {
+                    temp.push_back({copy_enemy[i].y+1,copy_enemy[i].x,true});
                 }
             }
-            if(alives.empty()) break;
-            temp = alives;
+            if(temp.size() == 0) break;
+            copy_enemy = temp;
         }
         result = max(result,res);
         return;
     }
+
+
     for(int i=index; i<=M; i++) {
-        if(selects[i] == false) {
-            selects[i] = true;
-            archer(i,cnt+1);
-            selects[i] = false;
+        if(selection[i] == 0) {
+            selection[i] = 1;
+            defense(i,cnt+1);
+            selection[i] = 0;
         }
     }
 }
 
-int main()
-{
+int main() {
     scanf("%d %d %d",&N,&M,&D);
     for(int i=1; i<=N; i++) {
         for(int j=1; j<=M; j++) {
-            scanf("%d",&castle[i][j]);
-            if(castle[i][j]) enemy.push_back({i,j,true});
+            scanf("%d",&board[i][j]);
+            if(board[i][j]) enemy.push_back({i,j,true});
         }
     }
-    archer(1,0);
+    defense(1,0);
     printf("%d",result);
 }
