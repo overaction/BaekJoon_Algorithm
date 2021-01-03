@@ -44,7 +44,7 @@ void moving() {
                 circle[idx][i] = temp[i];
             }
         }
-        idx = x * ++counts;
+        idx = x * ;
     }
 }
 

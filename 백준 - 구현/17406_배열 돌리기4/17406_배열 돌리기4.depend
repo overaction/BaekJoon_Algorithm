@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1609665110 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\17406_배열 돌리기4\main.cpp
+	<iostream>
+	<stdio.h>
+	<deque>
+	<cstring>
+	<algorithm>
+	<vector>
+
