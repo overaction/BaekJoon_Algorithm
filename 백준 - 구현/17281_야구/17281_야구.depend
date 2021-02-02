@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1612249470 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\17281_야구\main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<deque>
+	<cstring>
+	<algorithm>
+
