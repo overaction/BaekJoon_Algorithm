@@ -8,7 +8,7 @@ using namespace std;
 #define MAX_INING 51
 int N,answer=0;
 int baseb[MAX_INING][10];
-bool select[10];
+bool selected[10];
 int order[10];
 
 void simulate() {
@@ -96,11 +96,11 @@ void DFS(int cnt) {
         return;
     }
     for(int i=1; i<10; i++) {
-        if(select[i]) continue;
-        select[i] = true;
+        if(selected[i]) continue;
+        selected[i] = true;
         order[i] = cnt;
         DFS(cnt+1);
-        select[i] = false;
+        selected[i] = false;
     }
 }
 
@@ -112,7 +112,7 @@ int main()
             scanf("%d",&baseb[i][j]);
         }
     }
-    select[4] = true;
+    selected[4] = true;
     order[4] = 1; // 4번타자에 1번선수 고정
     DFS(2);
     printf("%d",answer);

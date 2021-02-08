@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1612777147 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\17472_다리 만들기 2\main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<deque>
+	<cstring>
+	<algorithm>
+
