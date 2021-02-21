@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1613059965 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\1022_소용돌이 예쁘게 출력하기\main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<deque>
+	<cstring>
+	<algorithm>
+

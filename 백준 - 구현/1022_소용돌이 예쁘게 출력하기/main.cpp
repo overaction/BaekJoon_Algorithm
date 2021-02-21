@@ -44,7 +44,7 @@ int main()
     }
     for(int i=0; i<=r2-r1; i++) {
         for(int j=0; j<=c2-c1; j++) {
-            printf("%*d ",2,square[i][j]);
+            printf("%*d ",cnt,square[i][j]);
         }
         printf("\n");
     }
