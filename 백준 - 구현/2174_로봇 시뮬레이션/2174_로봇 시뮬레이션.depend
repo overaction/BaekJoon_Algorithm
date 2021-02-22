@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1613976645 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\2174_로봇 시뮬레이션\main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<deque>
+	<cstring>
+	<algorithm>
+
