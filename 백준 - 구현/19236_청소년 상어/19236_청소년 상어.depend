@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1614609543 source:d:\project\algorithms\baekjoon_algorithm\백준 - 구현\19236_청소년 상어\main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<deque>
+	<cstring>
+	<queue>
+	<algorithm>
+

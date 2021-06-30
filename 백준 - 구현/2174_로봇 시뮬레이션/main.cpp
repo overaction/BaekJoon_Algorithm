@@ -5,7 +5,7 @@
 #include <cstring>
 #include <algorithm>
 using namespace std;
-int dy[4] = {0,1,0,-1};
+int dy[4] = {0,-1,0,1};
 int dx[4] = {1,0,-1,0};
 int A,B;
 int N,M;
@@ -21,12 +21,12 @@ int moving(int num, char option, int rep) {
     int y = Rob[num].y;
     int x = Rob[num].x;
     int cur = Rob[num].cur;
-    if(option == 'R') {
+    if(option == 'L') {
         cur = cur - (rep % 4);
         if(cur < 0) cur += 4;
         Rob[num].cur = cur;
     }
-    else if(option == 'L') {
+    else if(option == 'R') {
         cur = cur + (rep % 4);
         if(cur > 3) cur -= 4;
         Rob[num].cur = cur;

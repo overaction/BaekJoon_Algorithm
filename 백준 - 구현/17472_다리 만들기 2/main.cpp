@@ -139,7 +139,7 @@ bool verify() {
 }
 
 void answering(int cnt, int idx, int sum) {
-    if(cnt > 1) {
+    if(cnt >= 1) {
         if(verify()) {
             if(answer > sum)
                 answer = sum;
