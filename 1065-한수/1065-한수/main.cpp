@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <algorithm>
 using namespace std;
-#define INF 98765432
 int N;
 
 int solution(int N) {
