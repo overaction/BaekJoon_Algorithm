@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1625073398 source:d:\project\algorithms\baekjoon_algorithm\1065-한수\1759-암호 만들기\main.cpp
+	<iostream>
+	<vector>
+	<stdio.h>
+	<string.h>
+	<algorithm>
+
