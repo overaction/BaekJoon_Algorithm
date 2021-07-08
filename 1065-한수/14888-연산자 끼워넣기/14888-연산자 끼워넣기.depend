@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1625292786 source:d:\project\algorithms\baekjoon_algorithm\1065-한수\14888-연산자 끼워넣기\main.cpp
+	<iostream>
+	<vector>
+	<stdio.h>
+
