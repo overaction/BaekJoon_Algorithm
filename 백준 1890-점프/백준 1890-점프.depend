@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1625758980 source:d:\project\algorithms\알고리즘 문제 해결 전략\algorithm_problem_solution\백준 1890-점프\main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<cstring>
+
