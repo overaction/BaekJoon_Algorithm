@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1627999317 source:d:\project\algorithms\baekjoon_algorithm\12865-평범한 배낭\12865-평범한 배낭\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<vector>
+	<cstring>
+
