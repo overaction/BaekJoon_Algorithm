@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1628004675 source:d:\project\algorithms\baekjoon_algorithm\2225-합분해\2225-합분해\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<vector>
+	<cstring>
+
