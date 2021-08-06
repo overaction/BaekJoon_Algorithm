@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1628224761 source:d:\project\algorithms\baekjoon_algorithm\11660-구간 합 구하기 5\11660-구간 합 구하기 5\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<vector>
+	<cstring>
+	<cmath>
+
