@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1628400019 source:d:\project\algorithms\baekjoon_algorithm\2407-조합\2407-조합\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<cstring>
+	<vector>
+
