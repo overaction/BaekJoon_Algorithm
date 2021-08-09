@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1628486110 source:d:\project\algorithms\baekjoon_algorithm\1516-게임 개발\1516-게임 개발\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<cstring>
+	<vector>
+	<queue>
+
