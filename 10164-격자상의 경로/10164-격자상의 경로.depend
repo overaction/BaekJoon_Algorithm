@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1628632715 source:d:\project\algorithms\baekjoon_algorithm\10164-격자상의 경로\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<cstring>
+
