@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1628639051 source:d:\project\algorithms\baekjoon_algorithm\15988-1,2,3 더하기 3\15988-1,2,3 더하기 3\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<cstring>
+
