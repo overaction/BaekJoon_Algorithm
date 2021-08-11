@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1628696943 source:d:\project\algorithms\baekjoon_algorithm\14226-이모티콘\14226-이모티콘\main.cpp
-	<iostream>
-	<stdio.h>
-	<algorithm>
-	<cstring>
-	<deque>
-
