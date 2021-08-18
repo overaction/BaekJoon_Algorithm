@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1629187527 source:d:\project\algorithms\baekjoon_algorithm\1715-카드 정렬하기\1715-카드 정렬하기\main.cpp
+	<iostream>
+	<vector>
+	<stdio.h>
+	<string>
+	<algorithm>
+	<queue>
+
