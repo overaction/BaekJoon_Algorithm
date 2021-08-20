@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1629474750 source:d:\project\algorithms\baekjoon_algorithm\2437-저울\2437-저울\main.cpp
+	<iostream>
+	<set>
+	<stdio.h>
+	<string>
+	<algorithm>
+	<vector>
+	<queue>
+
