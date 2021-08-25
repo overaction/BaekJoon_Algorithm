@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1629867405 source:d:\project\algorithms\baekjoon_algorithm\11000-강의실 배정\11000-강의실 배정\main.cpp
+	<iostream>
+	<set>
+	<stdio.h>
+	<string>
+	<algorithm>
+	<vector>
+	<queue>
+
