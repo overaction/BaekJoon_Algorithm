@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1629875751 source:d:\project\algorithms\baekjoon_algorithm\10775-공항\10775-공항\main.cpp
+	<iostream>
+	<set>
+	<stdio.h>
+	<string>
+	<algorithm>
+	<vector>
+	<queue>
+
