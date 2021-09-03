@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1630602716 source:d:\project\algorithms\baekjoon_algorithm\8980-택배\8980-택배\main.cpp
+	<iostream>
+	<vector>
+	<stdio.h>
+	<string>
+	<string.h>
+	<algorithm>
+
