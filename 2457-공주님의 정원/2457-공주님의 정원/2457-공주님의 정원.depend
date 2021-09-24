@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1632497912 source:d:\project\algorithms\baekjoon_algorithm\2457-공주님의 정원\2457-공주님의 정원\main.cpp
+	<iostream>
+	<vector>
+	<stdio.h>
+	<string>
+	<string.h>
+	<algorithm>
+
