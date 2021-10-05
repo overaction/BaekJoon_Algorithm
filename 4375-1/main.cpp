@@ -12,12 +12,15 @@ int main() {
     int n;
     while (cin >> n) {
         int num = 0;
-        // 몇자리수인지 구하기
-        for (int i = 1;i<=n; i++) {
-            num = num * 10 + 1;
+        int cnt = 0;
+        while(1) {
+            // 자리수 추가
+            num = num*10 +1;
+            // 모듈러 연산을 통해 무한히 커지는걸 방지
             num %= n;
-            if (num == 0) {
-                printf("%d\n", i);;
+            cnt++;
+            if(num == 0) {
+                printf("%d\n",cnt);
                 break;
             }
         }
