@@ -8,17 +8,23 @@
 #include <stack>
 using namespace std;
 
-int main() {
-    int n,k;
+void solution(int n) {
     int cnt = 0;
-    scanf("%d %d",&n,&k);
-    for(int i=1; i<=n; i++) {
-        if(n % i == 0) cnt++;
-        if(cnt == k) {
-            printf("%d",i);
-            break;
-        }
+    while(1) {
+        if(n == 0) break;
+        if(n % 2 == 1) printf("%d ",cnt);
+        n = n / 2;
+        cnt++;
     }
-    if(cnt < k) printf("0");
+}
+
+int main() {
+    int n,T;
+    scanf("%d",&T);
+    for(int t=0; t<T; t++) {
+        scanf("%d",&n);
+        solution(n);
+        printf("\n");
+    }
 }
 
