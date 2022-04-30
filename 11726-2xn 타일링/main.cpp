@@ -10,13 +10,12 @@ using namespace std;
 int N;
 int cache[1001];
 
-// n크기의 직사각형을 채우는 방법의 수 반환
 int solution(int n) {
     int &ret = cache[n];
     if(ret != -1) return ret;
 
-    ret = solution(n-2) + solution(n-1);
-    return ret % 10007;
+    ret = (solution(n-2)*2 + solution(n-1))%10007;
+    return ret;
 }
 
 int main() {
@@ -24,6 +23,6 @@ int main() {
     memset(cache,-1,sizeof(cache));
     cache[0] = 0;
     cache[1] = 1;
-    cache[2] = 2;
+    cache[2] = 3;
     printf("%d\n",solution(N));
 }
