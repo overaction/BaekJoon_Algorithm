@@ -8,44 +8,42 @@
 #include <stack>
 using namespace std;
 
-#define MAX_SIZE 100000+1
+#define MAX_SIZE 100000
 
-int N, K;
-int visited[MAX_SIZE];
+int N,K;
+bool visited[MAX_SIZE+1];
 
-int bfs() {
-    deque<int> dq;
-    dq.push_back(N);
-    visited[N] = 1;
-    while (!dq.empty()) {
-         // 덱의 앞의 요소들부터 꺼내옴
-        int pos_x = dq.front();
-        dq.pop_front();
+int solution() {
+    priority_queue < pair < int,int >, vector < pair < int,int > >, greater < pair < int,int > > > q;
+    q.push({0,N});
+    visited[N] = true;
+    
+    while(!q.empty()) {
+        int depth = q.top().first;
+        int now = q.top().second;
+        q.pop();
 
-        if(pos_x == K) return visited[K] - 1;
-
-        // 순간이동은 덱의 앞쪽에 집어넣음.
-        if (pos_x * 2 < MAX_SIZE && !visited[pos_x * 2]) {
-            dq.push_front(pos_x * 2);
-            visited[pos_x * 2] = visited[pos_x];
+        if(now == K) {
+            return depth;
         }
 
-        // 걷는이동은 덱의 뒤쪽에 집어넣음.
-        if (pos_x + 1 < MAX_SIZE && !visited[pos_x + 1]) {
-            dq.push_back(pos_x + 1);
-            visited[pos_x + 1] = visited[pos_x] + 1;
+        if (now * 2 <= MAX_SIZE && !visited[now * 2]) {
+            q.push({ depth, now * 2 });
+            visited[now * 2] = true;
         }
-
-        // 걷는이동은 덱의 뒤쪽에 집어넣음.
-        if (pos_x - 1 >= 0 && !visited[pos_x - 1]) {
-            dq.push_back(pos_x - 1);
-            visited[pos_x - 1] = visited[pos_x] + 1;
+        if (now + 1 <= MAX_SIZE && !visited[now + 1]) {
+            q.push({ depth + 1, now + 1 });
+            visited[now + 1] = true;
+        }
+        if (now - 1 >= 0 && !visited[now - 1]) {
+            q.push({ depth + 1 , now - 1 });
+            visited[now - 1] = true;
         }
     }
 }
 
 int main() {
     scanf("%d %d", &N, &K);
-    printf("%d\n", bfs());
+    printf("%d\n", solution());
     return 0;
 }
