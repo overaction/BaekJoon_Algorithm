@@ -2,54 +2,63 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include <map>
 using namespace std;
 
-int row,col;
-vector<int> v;
-bool check[500][500][4];
-char arr[500][500];
-int dx[4]={0,1,0,-1};
-int dy[4]={-1,0,1,0};
+// 상 하 좌 우
+int dy[4]={-1,1,0,0};
+int dx[4]={0,0,-1,1};
+bool visited[500][500][4];
+int N,M;
+vector <string> arr;
+vector<int> answer;
 
-void dfs(int y, int x, int dir, int len){
-    if(check[y][x][dir]){
-        v.push_back(len-1);
-        return;
-    }
-    check[y][x][dir]=true;
-    char c = arr[y][x];
-    int ny,nx,nd=dir;
-    if(c=='L')  nd = (dir+3)%4;
-    else if(c=='R') nd = (dir+1)%4;
-    ny = y+dy[nd];
-    nx = x+dx[nd];
-    if(ny<0) ny+=row;
-    else if(ny>=row) ny-=row;
-    if(nx<0) nx+=col;
-    else if(nx>=col) nx-=col;
-	
-    dfs(ny,nx,nd,len+1);
+int transform(char c, int dir) {
+	if(c == 'L') {
+		if(dir == 0) return 2;
+		if(dir == 1) return 3;
+		if(dir == 2) return 1;
+		if(dir == 3) return 0;
+	}
+	else if(c == 'R') {
+		if(dir == 0) return 3;
+		if(dir == 1) return 2;
+		if(dir == 2) return 0;
+		if(dir == 3) return 1;
+	}
+}
+
+void dfs(int y, int x, int dir, int cnt) {
+	if(visited[y][x][dir] == true) {
+		if(cnt != 0) answer.push_back(cnt);
+		return;
+	}
+	visited[y][x][dir] = true;
+	int ny,nx;
+	int nD;
+
+	if(arr[y][x] != 'S') nD = transform(arr[y][x],dir);
+	ny = y + dy[nD];
+	nx = x + dx[nD];
+
+	if(ny >= N) ny = 0;
+	if(nx >= M) nx = 0;
+	if(ny < 0) ny = N-1;
+	if(nx < 0) nx = M-1;
+
+	return dfs(ny,nx,nD,cnt+1);
 }
 
 vector<int> solution(vector<string> grid) {
-    vector<int> answer;
-    row = grid.size();
-    col = grid[0].size();
-    
-    for(int i=0;i<row;i++)
-        for(int j=0;j<col;j++)
-            arr[i][j]=grid[i][j];
-    
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-            for(int k=0;k<4;k++){
-                if(check[i][j][k]) continue;
-                dfs(i,j,k,1);
-            }
-        }
-    }
-    sort(v.begin(),v.end());
-    answer = v;
+    N = grid.size();
+	M = grid[0].size();
+	arr = grid;
+	for(int i=0; i<N; i++) {
+		for(int j=0; j<M; j++) {
+			for(int k=0; k<4; k++) {
+				dfs(i,j,k,0);
+			}
+		}
+	}
+	sort(answer.begin(),answer.end());
     return answer;
 }
