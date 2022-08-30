@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1628348852 source:d:\project\algorithms\baekjoon_algorithm\2011-암호코드\2011-암호코드\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<cstring>
+	<vector>
+

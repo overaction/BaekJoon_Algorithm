@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1628008578 source:d:\project\algorithms\baekjoon_algorithm\1309-동물원\1309-동물원\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<vector>
+	<cstring>
+

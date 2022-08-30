@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1627917733 source:d:\project\algorithms\baekjoon_algorithm\17142_연구소3_reacap\9.9 드래곤 커브\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<vector>
+	<cstring>
+	<cmath>
+

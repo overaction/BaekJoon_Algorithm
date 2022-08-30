@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1629899654 source:d:\project\algorithms\baekjoon_algorithm\2812-크게 만들기\2812-크게 만들기\main.cpp
+	<iostream>
+	<set>
+	<stdio.h>
+	<string>
+	<algorithm>
+	<vector>
+	<queue>
+

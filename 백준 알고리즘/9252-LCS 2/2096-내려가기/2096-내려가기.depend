@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1628157079 source:d:\project\algorithms\baekjoon_algorithm\9252-lcs 2\2096-내려가기\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<vector>
+	<cstring>
+	<cmath>
+

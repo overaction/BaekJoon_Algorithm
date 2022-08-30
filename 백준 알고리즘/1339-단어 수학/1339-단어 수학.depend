@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1629179610 source:d:\project\algorithms\baekjoon_algorithm\1339-단어 수학\main.cpp
+	<iostream>
+	<vector>
+	<stdio.h>
+	<string>
+	<algorithm>
+

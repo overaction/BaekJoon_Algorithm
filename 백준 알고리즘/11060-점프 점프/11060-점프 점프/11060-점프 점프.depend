@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1628742400 source:d:\project\algorithms\baekjoon_algorithm\11060-점프 점프\11060-점프 점프\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<cstring>
+	<deque>
+
